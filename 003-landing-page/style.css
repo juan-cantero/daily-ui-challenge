@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+:root {
+  --main-color:#FF4A4A;
+  --secondary-color:#f4ede1;
+  
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a:link,a:active,a:visited{text-decoration:none !important;}
+
+body {
+  font-family: 'Roboto',Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Nav Bar */
+
+#navbar {
+  position: sticky;
+  top:0;
+  display: flex;
+  background:var(--main-color) ;
+  color:#fff;
+  justify-content: space-between;
+  padding:1rem;
+  z-index: 222;
+}
+
+#navbar .menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+#navbar .menu .item a {
+  color:white;
+  text-decoration: none;
+padding: 0.75rem;
+margin: 0 0.25rem
+}
+
+#navbar .menu .item a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+
+#header {
+  display:flex;
+  justify-content: center;
+  background: url('./img//milanesa.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  margin: auto;
+  height: 50vh;
+}
+
+#header .tel {
+  color:#fff;
+  align-self: flex-end;
+
+}
+
+/* PRODUCTS */
+
+.products {
+  margin-top: 1rem;
+ display: flex; 
+  width: 100%;
+}
+
+.products .card {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.products .card img {
+  width: 100%;
+  height: 155px;
+}
+
+
+/* Footer */
+#footer {
+  display: flex;
+  justify-content: center;
+  padding:1rem;
+  background-color: var(--secondary-color);
+  
+}
+
+#footer .footer-container {
+  text-align: center;
+  color: #505050;
+}
+
+#footer .footer-container ul {
+  list-style: none;
+}
+
+#footer .footer-container ul li a {
+  text-decoration: none;
+  color: #505050
+}
+#footer .footer-container ul li a:hover {
+  color: black;
+}
+
+
+/* Util Classes */
+
+.p-secondary {
+  color: #505050;
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+.btn {
+  background: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 70%;
+  padding: 9px 0;
+  border: 3px solid var(--main-color);
+  color: var(--main-color);
+  border-radius: 5px;
+  align-self: center;
+}
