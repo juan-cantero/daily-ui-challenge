@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*,*::after,*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.root {
+  height: 100vh;
+  width: 100vw;
+  background-color: #394654;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 90%;
+  width: 30%;
+  background: url('./img/women2.jpg')no-repeat ;
+  background-position: center;
+   -moz-background-size: cover;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.card .card-overlay {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: rgba(10,10,73, 0.5)
+}
+
+.card .card-overlay .info-container {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ccc; 
+  width: 100%;
+}
+
+.info .info-age {
+  border-right: 1px solid #ccc;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+
+/* UTILS */
+.l-header {
+   font-family: 'Sriracha', cursive;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.text {
+  color: #222222;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.primary-button {
+  border: none;
+  width: 100%;
+  height: 4rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+  background-color:rgba(25,25,73, 0.5)
+}
