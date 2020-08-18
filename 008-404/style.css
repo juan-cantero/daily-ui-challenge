@@ -1,0 +1,44 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+  background: url('./img/crash.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.root h1 {
+  font-size: 6rem;
+  color:white;
+}
+
+.root h3 {
+  font-size: 4rem;
+  color:white;
+}
+
+.root button {
+  border: none;
+  padding:1rem;
+  cursor: pointer;
+  background-color: #B20000;
+  color:white;
+}
+
+.root button:hover {
+  background-color:#FFFF99 ;
+  color:#B20000;
+}
